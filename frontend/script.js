@@ -45,3 +45,14 @@ loginButton.addEventListener('click', async (event) => {
         alert("Could not connect to the server.");
     }
 });
+
+
+
+function togglePasswordVisibility() {
+    var passwordInput = document.getElementById('password');
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}

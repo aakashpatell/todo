@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signuptodo</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="/frontend/script.js"></script>
 </head>
 <body>
-    <h1>Get started on Watodo</h1>
-        <div class="accountbox">
-            <!-- <h2>To-Do Credentials</h2> -->
+    <div class="Login-container">
+        <div class="login-box">
+            <h1>Login</h1>
             <form action="/database/add_task.php">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder ="Create Username" id="username">
+                <input id = "emailBox" type="text" placeholder =" Enter Username">
                 <br/>
                 <i class="fas fa-lock"></i>
                 <!-- <div class="password-container"> -->
-                    <input type="password" placeholder ="Create Password" id="password">
+                    <input type="passwordBox" placeholder ="Create Password" id="password">
                     <button id="passwordEye" type="button" onclick="togglePasswordVisibility()">
                         <i class="fas fa-eye"></i>
                     </button>
                 <!-- </div> -->
                 <br/>
-                <pre>       <input type="submit" value="Confirm">  </pre>
-            </form>
+                <pre><input id="loginBtn" type="submit" value="Login"></pre>
+            </form>            
         </div>
-        Don't have an account? <a href="/index.html" > signup</a>
-        <br/>
-        Use your customized todo Diary!!..
+        Don't have an account? <a href="/frontend/signup.html" > signup</a>
+    </div>
 </body>
 </html>

@@ -1,10 +1,10 @@
-To members of Mehfil-ism,
+# Notice for Members of Mehfil-ism
 
-note 1 :
-use fork method, I have limited write persmission as of now, to get access to github and for every changes you want to merge create PR (pull request) like we used to do.
+## Note 1: Git Workflow
+Use the fork method. I have limited write permission as of now. To get access to GitHub and for every change you want to merge, create a PR (pull request) like we used to do.
 
-note 2 :
-update your work (again) as the previous commit is being restored, the recent files you'd pushed will be deleted from github.
+## Note 2: Update Your Work
+Update your work (again) as the previous commit is being restored. The recent files you'd pushed will be deleted from GitHub.
 
-note 3 :
-use .gitignore file to not to upload random files : for example - you do not have to upload .cph folder.
+## Note 3: Use .gitignore
+Use a .gitignore file to avoid uploading random files. For example, you do not have to upload the .cph folder.
