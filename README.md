@@ -1,67 +1,59 @@
-# 📝 Web-Based To-Do List Service
-live hosted on https://mehfilism.github.io/todo/
-## 📌 Project Overview
+# Mehfilism: Wa To Do
 
-This project aims to develop a web-based To-Do List application that supports account logins. Users can manage their daily tasks efficiently while optionally maintaining a personal profile.
+[![Website](https://img.shields.io/badge/Website-mehfilism.github.io/todo/-blue)](https://mehfilism.github.io/todo/)
 
-The system is designed with a structured separation of concerns:
+A web-based To-Do List application that supports both guest and account-based task management, built with a clean separation of frontend, backend, and database layers.
 
-* Frontend for user interface
-* Backend for logic and API handling
-* Database for persistent storage
+## PROJECT OVERVIEW
 
----
+This project develops a responsive web application for managing personal to-do lists. The system supports two modes of operation: guest mode for quick, temporary task management and account mode for persistent, user-specific task storage.
 
-## 🎯 Objectives
+The architecture follows a structured approach with clear separation of concerns:
+- **Frontend**: User interface and client-side interactions
+- **Backend**: Server-side logic and API handling
+- **Database**: Secure persistent storage
 
-* Create an intuitive and responsive user interface
-* Enable task management (add, delete, update tasks)
-* Support guest users without account creation
-* Provide account-based functionality with user profiles
-* Store and retrieve data securely from a server-side database
+## Objectives
 
----
+- Create an intuitive and responsive user interface
+- Enable comprehensive task management (add, delete, update, complete tasks)
+- Support guest users without requiring account creation
+- Provide account-based functionality with user profiles
+- Ensure secure data storage and retrieval from a server-side database
 
-## ⚙️ Features
-
-### 👤 Guest Mode
-
-* No login required
-* Tasks stored temporarily (browser storage)
-* Quick access for short-term usage
+## FEATURES
 
 ### 🔐 Account Mode
+- User registration and login system
+- Personalized user profiles with name and additional information
+- Persistent task storage in the database
+- Secure user session management
 
-* User registration and login
-* Profile details:
-  * Name
-  * Other information
-* Persistent task storage in database
+### 📝 To-Do Management
+- Add new tasks with descriptions
+- Delete unwanted tasks
+- Mark tasks as completed
+- View all tasks in an organized list
 
-### 📋 To-Do Management
-
-* Add tasks
-* Delete tasks
-* Mark tasks as completed
-* View all tasks
-
----
+### 👤 Guest Mode
+- No login required for immediate use
+- Temporary task storage using browser local storage
+- Ideal for short-term or one-off task management
 
 ## 🏗️ System Architecture
 
 ```
-Frontend (HTML, CSS)
+Frontend (HTML, CSS, JavaScript)
         ↓
 JavaScript (Fetch API)
         ↓
 Backend (Node.js / Express)
         ↓
-Database (MySQL / MariaDB)
+Database (MySQL)
 ```
 
----
 
-## 🗂️ Project Structure
+## PROJECT STRUCTURE
 
 ```
 /frontend
@@ -78,38 +70,17 @@ Database (MySQL / MariaDB)
     ├── schema.sql
 ```
 
----
+## 👥 Project Team
 
-1. FRONTEND by AAKASH PATEL (on frontend branch)
-   html
-   css styling
-   > login / sign up page<br>
-   > home page (default guest user)<br>
+| Role | Member | Responsibilities |
+|------|--------|------------------|
+| **Frontend Developer** | AAKASH PATEL | Login/signup pages, home page UI |
+| **Client-Side Backend** | PRABIR SOREN | Website interactivity, frontend-server connection, guest mode implementation |
+| **Server-Side Backend** | ADITYA EKKA | Backend server, database integration, website hosting |
+| **Database Administrator** | RAHUL MARAVI | Database setup, table creation, query writing |
 
-2. LOGIC by PRABIR SOREN (on logic branch)
-   Javascript
-   fetch API calls
-   > make the website interactive<br>
-   > connects frontend to server<br>
-   > handles guest mode (offline / local storage for guest mode)<br>
+## 🚀 Getting Started
 
-3. BACKEND by #? (on backend branch)
-   Node.js / Express recommended
-   API
-   > create simple server<br>
+Visit the live application at: [https://mehfilism.github.io/todo/](https://mehfilism.github.io/todo/)
 
-4. DATABASE by RAHUL MARAVI (on database branch)
-   mysql / mariadb recommended
-   > create user table<br>
-   > database table<br>
-   > create query<br>
-
----
-
-## 🔌 API Endpoints (yet unplanned though)
-
-* `POST /signup` → Register user
-* `POST /login` → Authenticate user
-* `GET /todos` → Fetch tasks
-* `POST /todos` → Add task
-* `DELETE /
+For development setup, ensure you have the required dependencies installed and configured for your local environment.
