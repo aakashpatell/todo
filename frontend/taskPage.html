@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    Add your Task here-:
+    <h1>Watodo -: Task Manager</h1>
+    <hr>
+    <h3>Add Your Task</h3>
+    <form action="database/add_task.php"  method="POST">
+        <input   type="text" name="task" placeholder="Enter your task" required>
+        <input  type ="submit" value="Add Task">
+    </form>
+
+    <hr>
+
+    <h3>Your Tasks</h3>
+    <ul>
+        <li>Task 1 <button>Delete</button></li>
+        <li>Task 2 <button>Delete</button></li>
+        <li>Task 3 <button>Delete</button></li>
+    </ul>
 </body>
 </html>
