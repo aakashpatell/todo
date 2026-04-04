@@ -1,0 +1,10 @@
+#Prabir
+learned till now 
+-async
+-await
+-basics of js
+-extract input from html
+
+learned today
+-post method
+-request,response
